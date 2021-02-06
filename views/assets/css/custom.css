@@ -1,0 +1,12 @@
+.navbar-brand {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.navbar-nav {
+    font-size: 18px;
+}
+
+ul li.active a {
+    color: lightgreen;
+}

@@ -1,0 +1,22 @@
+html
+    head
+        title Ubah Data Buah
+    body
+    h1 Edit Data Buah
+    a(href="http://localhost:3000/databuah/") Home
+    br
+    br
+    form(action=`/databuah/${data.id}?_method=PUT` method="post")
+            label Kode Buah
+                input(type="text" name="kode_buah" value=data.kode_buah)
+                br
+            label Nama
+                input(type="text" name="nama" value=data.nama)
+                br
+            label Jumlah Buah Kg
+                input(type="text" name="jumlah" value=data.jumlah)
+                br
+            label Harga Buah Kg
+                input(type="text" name="harga" value=data.harga)
+                br
+            input(type="submit" value="simpan")
